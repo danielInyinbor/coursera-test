@@ -1,0 +1,123 @@
+body{
+	font-family: sans-serif;
+	margin: 0;
+}
+h1{
+	text-align: center;
+}
+div .chicken{
+	display: inline-block;
+	float: left;
+	width: 30%;
+	background-color: grey;
+	margin: 0 10px 0 10px;
+
+}
+div .beef{
+	display: inline-block;
+	float: center;
+	width: 30%;
+	background-color: grey;
+
+}
+div .sushi{
+	position: absolute;
+	display: inline-block;
+	float: right;
+	width: 30%;
+	background-color: grey;
+	margin: 0 15px 0 10px;
+}
+p{
+	padding: 10px;
+}
+#one{
+	background-color: pink;
+}
+#two{
+	
+	background-color: red; 
+}
+#three{
+	background-color: orange;
+}	
+@media(min-width: 992px){
+		#one{
+	position: relative;
+	margin: 0 0 4px 328px;
+	width: 20%;
+	overflow: none;
+}
+#two{
+	position: relative;
+	width: 20%;
+	margin:0 0 4px 329px; 
+	overflow: none;
+}
+#three{
+	position: relative;
+	width: 20%;
+	margin:0 0 4px 327px;
+	overflow: none;
+}
+}
+@media(min-width: 768px) and (max-width: 991px){
+	div .chicken{
+		width: 45%;
+		float: none;
+
+	}
+	div .beef{
+		float: none;
+		width: 45%;
+		
+	}
+	div .sushi{
+		float: none;
+		display: block;
+		width: 90%;
+		margin: 10px;
+	}
+	#one{
+		position: absolute;
+		margin: 0 0 4px 283px;
+	}
+    #two{
+		position: absolute;
+		margin: 0 0 4px 315px;
+	}
+	 #three{
+		position: absolute;
+		margin: 0 0 4px 665px;
+	}
+}
+@media( max-width: 767px){
+	div .chicken{
+		float: none;
+		display: block;
+		width: 90%;
+	}
+	div .beef{
+		float: none;
+		display: block;
+		width: 90%;
+		margin-left: 10px;
+	}
+	div .sushi{
+		float: none;
+		display: block;
+		width: 90%;
+	}
+	#one{
+		position: relative;
+		margin: 0 0 4px 433px;
+	}
+    #two{
+		position: relative;
+		margin: 0 0 4px 433px;
+	}
+	 #three{
+		position: relative;
+		margin: 0 0 4px 415px;
+	}
+}
